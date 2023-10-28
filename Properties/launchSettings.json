@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "XamlCompilerTest01 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "XamlCompilerTest01 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
