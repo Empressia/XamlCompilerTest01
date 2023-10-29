@@ -9,6 +9,7 @@
     mc:Ignorable="d">
 
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+		<CheckBox x:Name="myCheckBox">Switch myButton state.</CheckBox>
+		<Button x:Name="myButton" Click="myButton_Click" IsEnabled="{x:Bind unwrapNullable(myCheckBox.IsChecked, x:False), Mode=OneWay}">Click Me</Button>
     </StackPanel>
 </Window>

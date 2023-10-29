@@ -28,5 +28,16 @@ namespace XamlCompilerTest01 {
 		private void myButton_Click(object sender, RoutedEventArgs e) {
 			myButton.Content = "Clicked";
 		}
+
+		//public V unwrapNullable<V>(V? value, V defaultValue) where V : class {
+		//	return value ?? defaultValue;
+		//}
+		//public V unwrapNullable<V>(V? value, V defaultValue) where V : struct {
+		//	return value ?? defaultValue;
+		//}
+		public bool unwrapNullable(bool? value, bool defaultValue) {
+			return value ?? defaultValue;
+		}
+
 	}
 }
